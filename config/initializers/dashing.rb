@@ -10,6 +10,10 @@ Dashing.configure do |config|
   # config.redis_password = nil
   # config.redis_timeout  = 3
 
+  config.redis_host     = URI.parse(ENV["REDISTOGO_URL"]).host
+  config.redis_port     = URI.parse(ENV["REDISTOGO_URL"]).port
+  config.redis_password = URI.parse(ENV["REDISTOGO_URL"]).password
+
   # Redis namespace when pushing new data.
   # config.redis_namespace = 'dashing_events'
 
