@@ -34,7 +34,7 @@ gem 'dashing-rails'
 
 gem 'rails_12factor', group: :production
 gem 'pg', group: :production
-gem 'sqlite3'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -47,6 +47,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'sqlite3'
 
 end
 
